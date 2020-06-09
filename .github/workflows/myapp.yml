@@ -22,4 +22,21 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: 
+    - name: starting node.js
+      run: actions/setup-node@v2-beta
+      with:
+        version: 12
+    - name: GitHub Action for Yarn
+      uses: Borales/actions-yarn@v2.3.0
+      with:
+        # Yarn command
+        cmd: install
+    
+    - name: building yarn
+      run: yarn build
+      
+    - name: intalling surge
+       run: npm install --global surge
+        
+    - name: Deploying surge
+      run: surge ./build reactapp2tariq2.surge.sh --token ${{secrets.SURGE_TOKEN}}
