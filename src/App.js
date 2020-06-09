@@ -7,8 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        I am tariq updating react app.
-        <p>
+        <p>Hello! I am tariq updating react app.
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
