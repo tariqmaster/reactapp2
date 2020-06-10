@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello! I am tariq updating react app. <br/>
-          Edit <code>src/App.js</code> and save to reload.<br/>
+        <p>
           AlHamdulillah updated without watching any guidance this time.
         </p>
         <a
